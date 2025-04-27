@@ -1,7 +1,9 @@
 import requests
-from pprint import pprint
+from dotenv import load_dotenv
 
-API_Key = '5be9ec2f20a42c801a00ede872a61e48'
+load_dotenv()  
+
+API_Key = os.getenv('API_KEY')
 
 city = input("Enter a city: ")
 
